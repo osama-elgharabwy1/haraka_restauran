@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم حركة - أصل الطعم واللذاذة | كريب، بيتزا، شاورما، برجر</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Changa:wght@500;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-badge">CREPE & PIZZA</span>
+                <h1>حركة<span>HARAKA</span></h1>
+            </div>
+            <nav class="nav-links">
+                <a href="#hero" class="active">الرئيسية</a>
+                <a href="#offers">عروض اليوم 🔥</a>
+                <a href="#menu">المنيو</a>
+                <a href="#about">عن حركة</a>
+                <a href="#contact">التواصل والعنوان</a>
+            </nav>
+            <div class="nav-contact">
+                <a href="tel:01111111111" class="btn-call"><i class="fa-solid fa-phone"></i> ديلفري: 01111111111</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="hero-subtitle">⚡ الطعم اللي يعمل حركة في يومك ⚡</span>
+            <h2>أقوى تجربة كريب، بيتزا، شاورما وبرجر في مصر!</h2>
+            <p>مكونات طازجة 100%، جودة فاخرة، وطعم يأخذك لعالم تاني من السعادة والإشباع.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary"><i class="fa-solid fa-utensils"></i> استكشف المنيو</a>
+                <a href="https://wa.me/201111111112" target="_blank" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> اطلب عبر الواتساب</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Today's Special Offers Section -->
+    <section id="offers" class="offers-section">
+        <div class="container">
+            <div class="section-title">
+                <span class="badge">حصرياً</span>
+                <h2>عروض اليوم الفاخرة 🔥</h2>
+                <p>استمتع بأقوى الخصومات والوجبات المتميزة لفترة محدودة</p>
+            </div>
+
+            <!-- Admin Add Offer Trigger (Simulation) -->
+            <div class="admin-bar">
+                <button id="addOfferBtn" class="btn btn-admin"><i class="fa-solid fa-plus-circle"></i> إضـافة عرض جديد (خاص بالآدمن)</button>
+            </div>
+
+            <div class="offers-grid" id="offersGrid">
+                <!-- Offer Card 1 -->
+                <div class="offer-card">
+                    <span class="discount-tag">خصم 20%</span>
+                    <div class="offer-img">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" alt="عرض البيتزا">
+                    </div>
+                    <div class="offer-info">
+                        <h3>عرض الميكسات الفاخر</h3>
+                        <p>بيتزا مكس فراخ حجم كبير + 2 كريب استربس وسط + لتر بيبسي هدية!</p>
+                        <div class="offer-price">
+                            <span class="old-price">350 ج.م</span>
+                            <span class="new-price">280 ج.م</span>
+                        </div>
+                        <a href="https://wa.me/201111111112?text=أريد%20طلب%20عرض%20الميكسات%20الفاخر" class="btn btn-sm-order"><i class="fa-brands fa-whatsapp"></i> اطلب العرض</a>
+                    </div>
+                </div>
+
+                <!-- Offer Card 2 -->
+                <div class="offer-card">
+                    <span class="discount-tag">عرض الصحاب</span>
+                    <div class="offer-img">
+                        <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=600&q=80" alt="عرض البرجر والشاورما">
+                    </div>
+                    <div class="offer-info">
+                        <h3>وجبة الشاورما العائلية</h3>
+                        <p>وجبة شاورما عربي دبل + 2 برجر تشيكن + بطاطس حجم عائلي + صوصات شيدر ورانش.</p>
+                        <div class="offer-price">
+                            <span class="old-price">290 ج.م</span>
+                            <span class="new-price">230 ج.م</span>
+                        </div>
+                        <a href="https://wa.me/201111111112?text=أريد%20طلب%20وجبة%20الشاورما%20العائلية" class="btn btn-sm-order"><i class="fa-brands fa-whatsapp"></i> اطلب العرض</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-title">
+                <span class="badge">قائمة الطعام</span>
+                <h2>منيو مطعم حركة 🍕🌯🍔</h2>
+                <p>اختر ما تشتهيه نفسك من أشهى الأطباق المحضرة بحب وإتقان</p>
+            </div>
+
+            <!-- Categories Tabs -->
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="all">الكل</button>
+                <button class="tab-btn" data-category="pizza">بيتزا حركة</button>
+                <button class="tab-btn" data-category="crepe">كريب حركة</button>
+                <button class="tab-btn" data-category="crepe-mix">كريب مكس</button>
+                <button class="tab-btn" data-category="shawarma">شاورما حركة</button>
+                <button class="tab-btn" data-category="burger">برجر حركة</button>
+                <button class="tab-btn" data-category="extra">الإضافات والصوصات</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menuGrid">
+
+                <!-- ===== PIZZA ITEMS ===== -->
+                <div class="menu-item" data-category="pizza">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=600&q=80" alt="بيتزا مارجريتا">
+                        <span class="category-badge">بيتزا</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>بيتزا مارجريتا</h3>
+                        <p class="ingredients">موتزريلا، فلفل، زيتون، طماطم</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>M:</span> 80 ج.م</div>
+                            <div class="price-size"><span>L:</span> 120 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="pizza">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?auto=format&fit=crop&w=600&q=80" alt="بيتزا خضار">
+                        <span class="category-badge">بيتزا</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>بيتزا خضار</h3>
+                        <p class="ingredients">موتزريلا، كيري، مشروم، فلفل، طماطم</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>M:</span> 80 ج.م</div>
+                            <div class="price-size"><span>L:</span> 120 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="pizza">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" alt="بيتزا مكس جبن">
+                        <span class="category-badge">بيتزا</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>بيتزا مكس جبن</h3>
+                        <p class="ingredients">موتزريلا، شيدر، كيري، زيتون، فلفل، رومي</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>M:</span> 100 ج.م</div>
+                            <div class="price-size"><span>L:</span> 130 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="pizza">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" alt="بيتزا مكس فراخ">
+                        <span class="category-badge">بيتزا</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>بيتزا مكس فراخ</h3>
+                        <p class="ingredients">موتزريلا، استربس، شاورما، كيري، زيتون، فلفل</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>M:</span> 110 ج.م</div>
+                            <div class="price-size"><span>L:</span> 140 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="pizza">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=600&q=80" alt="بيتزا فراخ باربيكيو">
+                        <span class="category-badge">بيتزا</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>بيتزا فراخ باربيكيو</h3>
+                        <p class="ingredients">موتزريلا، شرائح فراخ متبلة بصوص الباربيكيو، كيري، فلفل، زيتون</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>M:</span> 110 ج.م</div>
+                            <div class="price-size"><span>L:</span> 140 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="pizza">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=600&q=80" alt="بيتزا تشيكن رانش">
+                        <span class="category-badge">بيتزا</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>بيتزا تشيكن رانش</h3>
+                        <p class="ingredients">موتزريلا، شرائح فراخ متبلة بصوص الرانش، كيري، فلفل، زيتون</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>M:</span> 110 ج.م</div>
+                            <div class="price-size"><span>L:</span> 140 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="pizza">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?auto=format&fit=crop&w=600&q=80" alt="بيتزا استربس">
+                        <span class="category-badge">بيتزا</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>بيتزا استربس</h3>
+                        <p class="ingredients">موتزريلا، قطع فراخ استربس، زيتون، فلفل، كيري</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>M:</span> 100 ج.م</div>
+                            <div class="price-size"><span>L:</span> 130 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="pizza">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?auto=format&fit=crop&w=600&q=80" alt="بيتزا مكس لحوم">
+                        <span class="category-badge">بيتزا</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>بيتزا مكس لحوم</h3>
+                        <p class="ingredients">موتزريلا، زيتون، فلفل، سجق، سوسيس، مفروم، كيري</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>M:</span> 115 ج.م</div>
+                            <div class="price-size"><span>L:</span> 140 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="pizza">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?auto=format&fit=crop&w=600&q=80" alt="بيتزا سوبريم">
+                        <span class="category-badge">بيتزا</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>بيتزا سوبريم</h3>
+                        <p class="ingredients">موتزريلا، فراخ متبلة، بسطرمة، سوسيس، فلفل، كيري</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>M:</span> 120 ج.م</div>
+                            <div class="price-size"><span>L:</span> 150 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="pizza">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=600&q=80" alt="بيتزا بيبروني">
+                        <span class="category-badge">بيتزا</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>بيتزا بيبروني</h3>
+                        <p class="ingredients">موتزريلا، بيبروني، زيتون، فلفل، كيري</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>M:</span> 120 ج.م</div>
+                            <div class="price-size"><span>L:</span> 150 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="pizza">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=600&q=80" alt="بيتزا سجق">
+                        <span class="category-badge">بيتزا</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>بيتزا سجق</h3>
+                        <p class="ingredients">موتزريلا، سجق بلدي، زيتون، فلفل، كيري</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>M:</span> 110 ج.م</div>
+                            <div class="price-size"><span>L:</span> 140 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="pizza">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=80" alt="بيتزا تشيكن هلا بينو">
+                        <span class="category-badge">بيتزا</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>بيتزا تشيكن هلا بينو 🔥</h3>
+                        <p class="ingredients">موتزريلا، قطع فراخ مع قطع هالبينو حار، زيتون، فلفل، كيري</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>M:</span> 110 ج.م</div>
+                            <div class="price-size"><span>L:</span> 140 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="pizza">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" alt="بيتزا شيش">
+                        <span class="category-badge">بيتزا</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>بيتزا شيش طاووق</h3>
+                        <p class="ingredients">موتزريلا، زيتون، فلفل، شيش طاووق، كيري</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>M:</span> 120 ج.م</div>
+                            <div class="price-size"><span>L:</span> 150 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="pizza">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=600&q=80" alt="بيتزا نصين">
+                        <span class="category-badge">بيتزا</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>بيتزا نصين (حسب اختيارك)</h3>
+                        <p class="ingredients">اختر طعمين مختلفين في بيتزا واحدة من أذواقك المفضلة</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>L:</span> 150 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ===== CREPE ITEMS ===== -->
+                <div class="menu-item" data-category="crepe">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=600&q=80" alt="كريب بانيه">
+                        <span class="category-badge">كريب</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>كريب بانيه</h3>
+                        <p class="ingredients">قطع بانيه دجاج مقرمشة مع الجبن والصوصات المميزة</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>S:</span> 40 ج.م</div>
+                            <div class="price-size"><span>M:</span> 60 ج.م</div>
+                            <div class="price-size"><span>L:</span> 80 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="crepe">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=600&q=80" alt="كريب استربس">
+                        <span class="category-badge">كريب</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>كريب استربس</h3>
+                        <p class="ingredients">قطع دجاج استربس المقرمشة مع الصوص الخاص والجبن</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>S:</span> 60 ج.م</div>
+                            <div class="price-size"><span>M:</span> 80 ج.م</div>
+                            <div class="price-size"><span>L:</span> 100 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="crepe">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=80" alt="كريب شيش">
+                        <span class="category-badge">كريب</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>كريب شيش طاووق</h3>
+                        <p class="ingredients">قطع شيش مشوية على الفحم مع خضار وصوصات فاخرة</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>S:</span> 70 ج.م</div>
+                            <div class="price-size"><span>M:</span> 90 ج.م</div>
+                            <div class="price-size"><span>L:</span> 110 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="crepe">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="كريب برجر">
+                        <span class="category-badge">كريب</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>كريب برجر</h3>
+                        <p class="ingredients">شرائح البرجر الشهية مع صوص الشيدر والجبنة الموتزريلا</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>S:</span> 60 ج.م</div>
+                            <div class="price-size"><span>M:</span> 80 ج.م</div>
+                            <div class="price-size"><span>L:</span> 100 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="crepe">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=600&q=80" alt="كريب كفتة">
+                        <span class="category-badge">كريب</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>كريب كفتة</h3>
+                        <p class="ingredients">أصابع الكفتة المشوية المتبلة بالبهارات الخاصة</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>S:</span> 60 ج.م</div>
+                            <div class="price-size"><span>M:</span> 80 ج.م</div>
+                            <div class="price-size"><span>L:</span> 100 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="crepe">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1619740455993-9e612b1af08a?auto=format&fit=crop&w=600&q=80" alt="كريب هوت دوج">
+                        <span class="category-badge">كريب</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>كريب هوت دوج / سوسيس</h3>
+                        <p class="ingredients">قطع الهوت دوج الممتازة مع الخضار والجبن ذائب</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>S:</span> 60 ج.م</div>
+                            <div class="price-size"><span>M:</span> 80 ج.م</div>
+                            <div class="price-size"><span>L:</span> 100 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="crepe">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80" alt="كريب بطاطس">
+                        <span class="category-badge">كريب</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>كريب بطاطس</h3>
+                        <p class="ingredients">بطاطس مقرمشة ذهبية مع الجبن والصوصات الحارة والباردة</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>S:</span> 40 ج.م</div>
+                            <div class="price-size"><span>M:</span> 60 ج.م</div>
+                            <div class="price-size"><span>L:</span> 80 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ===== CREPE MIX ITEMS ===== -->
+                <div class="menu-item" data-category="crepe-mix">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=600&q=80" alt="كريب مكس بانيه استربس">
+                        <span class="category-badge">كريب مكس</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>مكس بانيه + استربس</h3>
+                        <p class="ingredients">توليفة ممتازة من البانيه المقرمش مع قطع الاستربس الحارة</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>S:</span> 70 ج.م</div>
+                            <div class="price-size"><span>M:</span> 90 ج.م</div>
+                            <div class="price-size"><span>L:</span> 110 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="crepe-mix">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=80" alt="كريب مكس حرّكــــات">
+                        <span class="category-badge">كريب مكس</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>كريب مكس حرّكــــات 🔥💥</h3>
+                        <p class="ingredients">المكس المفضل لعملائنا! تشكيلة دجاج ولحوم خاصة جداً</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>S:</span> 130 ج.م</div>
+                            <div class="price-size"><span>M:</span> 150 ج.م</div>
+                            <div class="price-size"><span>L:</span> 170 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="crepe-mix">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=600&q=80" alt="كريب ديناميت">
+                        <span class="category-badge">كريب مكس</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>كريب ديناميت 💣</h3>
+                        <p class="ingredients">انفجار من الطعم والحشو القوي بالجبن والغرقان بالصوصات</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>S:</span> 150 ج.م</div>
+                            <div class="price-size"><span>M:</span> 170 ج.م</div>
+                            <div class="price-size"><span>L:</span> 200 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="crepe-mix">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?auto=format&fit=crop&w=600&q=80" alt="كريب مكس الشيف">
+                        <span class="category-badge">كريب مكس</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>كريب مكس الشيف 👨‍🍳</h3>
+                        <p class="ingredients">خلطة الشيف السرية الخاصة لمطعم حركة</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>S:</span> 150 ج.م</div>
+                            <div class="price-size"><span>M:</span> 170 ج.م</div>
+                            <div class="price-size"><span>L:</span> 200 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ===== SHAWARMA ITEMS ===== -->
+                <div class="menu-item" data-category="shawarma">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=600&q=80" alt="سندوتش شاورما">
+                        <span class="category-badge">شاورما</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>سندوتش شاورما فراخ</h3>
+                        <p class="ingredients">شرائح الشاورما المتبلة مع التومية المتميزة والخيار المخلل</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>سنجل:</span> 60 ج.م</div>
+                            <div class="price-size"><span>دبل:</span> 80 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="shawarma">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=600&q=80" alt="وجبة عربي">
+                        <span class="category-badge">شاورما</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>وجبة شاورما عربي</h3>
+                        <p class="ingredients">قطع شاورما مقطعة مع بطاطس مقلية، تومية، ومخلل</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>الوجبة:</span> 90 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="shawarma">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=600&q=80" alt="وجبة اكسترا">
+                        <span class="category-badge">شاورما</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>وجبة شاورما اكسترا / دبل</h3>
+                        <p class="ingredients">كمية مضاعفة من الشاورما اللذيذة والبطاطس والصوصات</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>اكسترا:</span> 120 ج.م</div>
+                            <div class="price-size"><span>دبل:</span> 170 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="shawarma">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" alt="فطيرة شاورما">
+                        <span class="category-badge">شاورما</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>فطيرة شاورما حركة</h3>
+                        <p class="ingredients">فطيرة مشلتتة محشية بشاورما الدجاج الغنية والجبن الموتزريلا</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>السعر:</span> 140 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ===== BURGER ITEMS ===== -->
+                <div class="menu-item" data-category="burger">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="برجر تشيكن">
+                        <span class="category-badge">برجر</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>برجر تشيكن سنجل</h3>
+                        <p class="ingredients">قطعة برجر دجاج مقرمشة مع الخس، الطماطم، وصوص الشيدر</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>السعر:</span> 100 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="burger">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80" alt="برجر دبل">
+                        <span class="category-badge">برجر</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>برجر تشيكن دبل 🎉</h3>
+                        <p class="ingredients">قطعتين برجر مع طبقات الشيدر والصوص الخاص لحركة</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>السعر:</span> 150 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ===== EXTRAS ITEMS ===== -->
+                <div class="menu-item" data-category="extra">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80" alt="بطاطس">
+                        <span class="category-badge">إضافات</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>باكت بطاطس فارم</h3>
+                        <p class="ingredients">بطاطس مقلية مقرمشة وساخنة</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>السعر:</span> 20 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="extra">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=600&q=80" alt="صوصات">
+                        <span class="category-badge">إضافات</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>الصوصات المميزة</h3>
+                        <p class="ingredients">تومية (صغيرة 10 / كبيرة 20) - صوص شيدر (10) - صوص تكساس (10) - صوص رانش (15)</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>من:</span> 10 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="extra">
+                    <div class="item-img">
+                        <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=600&q=80" alt="إضافات البيتزا">
+                        <span class="category-badge">إضافات</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>إضافات للبيتزا</h3>
+                        <p class="ingredients">إضافة لحوم (30 ج.م) - إضافة فراخ (30 ج.م) - إضافة جبن (20 ج.م)</p>
+                        <div class="price-box">
+                            <div class="price-size"><span>من:</span> 20 ج.م</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container about-container">
+            <div class="about-text">
+                <span class="badge">سر الجودة</span>
+                <h2>لماذا تختار مطعم حركة؟ 👑</h2>
+                <p>في مطعم **حركة**، لا نقدم مجرد وجبات، بل نصنع تجربة استثنائية من الطعم واللذاذة! نحن نعتمد على أحدث أساليب الطهي العصرية مع استخدام أجود خامات اللحوم والدواجن الطازجة يومياً، بالإضافة للجبن الطبيعي 100% والصوصات الخاصة التي ابتكرناها لتمنحك الطعم الأصلي الذي يعيش معك.</p>
+                <ul class="features-list">
+                    <li><i class="fa-solid fa-check-circle"></i> خامات طازجة وصحية 100% يومياً.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> أسرع خدمة توصيل ديلفري لضمان وصول الأكل ساخن.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> حشو سخي وأطراف غنية بالجبن.</li>
+                </ul>
+            </div>
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="مطعم حركة">
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <span class="badge">يسعدنا تواصلكم</span>
+                <h2>العنوان وأرقام التواصل📍</h2>
+                <p>زورونا في فرعنا أو اطلبوا الديلفري ليصلكم أينما كنتم</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <!-- Contact Info Card -->
+                <div class="contact-card">
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>العنوان بالتفصيل</h4>
+                            <p>حي المحطة - أمام مطعم البحراوي</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <div>
+                            <h4>طلبات الديلفري والتوصيل</h4>
+                            <p><a href="tel:01111111111">01111111111</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div>
+                            <h4>خدمة الاستفسارات عبر الواتساب</h4>
+                            <p><a href="https://wa.me/201111111112" target="_blank">01111111112</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <h4>ساعات العمل</h4>
+                            <p>نعمل يومياً من الساعة 12:00 ظهراً حتى 2:00 صباحاً</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location visual banner -->
+                <div class="location-banner">
+                    <div class="address-overlay">
+                        <span class="location-tag"><i class="fa-solid fa-map-pin"></i> موقعنا</span>
+                        <h3>حي المحطة أمام مطعم البحراوي</h3>
+                        <p>نصلك في أسرع وقت بأعلى جودة وسخونة!</p>
+                        <a href="https://wa.me/201111111112?text=ممكن%20تراسلني%20بالموقع%20على%20الخريطة" class="btn btn-primary" target="_blank"><i class="fa-solid fa-diamond-turn-right"></i> احصل على اتجاهات الوصول</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p>جميع الحقوق محفوظة &copy; 2026 لمطعم <strong>حركة HARAKA</strong> - تصميم وتطوير محترف</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/201111111112" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Admin Add Offer Modal Simulation -->
+    <div id="offerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3><i class="fa-solid fa-tags"></i> إضافة عرض جديد للآدمن</h3>
+            <form id="addOfferForm">
+                <div class="form-group">
+                    <label>عنوان العرض</label>
+                    <input type="text" id="offerTitle" placeholder="مثال: عرض الويك إند" required>
+                </div>
+                <div class="form-group">
+                    <label>تفاصيل العرض</label>
+                    <textarea id="offerDesc" placeholder="اكتب مكونات العرض والمزايا..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>السعر القديم (ج.م)</label>
+                    <input type="number" id="offerOldPrice" placeholder="200" required>
+                </div>
+                <div class="form-group">
+                    <label>السعر الجديد بعد الخصم (ج.م)</label>
+                    <input type="number" id="offerNewPrice" placeholder="150" required>
+                </div>
+                <div class="form-group">
+                    <label>رابط صورة العرض (اختياري)</label>
+                    <input type="url" id="offerImg" placeholder="https://...">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%;">نشر العرض فوراً على الموقع</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
